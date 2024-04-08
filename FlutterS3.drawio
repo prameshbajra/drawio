@@ -1,9 +1,43 @@
-<mxfile host="app.diagrams.net" modified="2024-04-08T02:10:16.860Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" version="24.0.1" etag="52NFTcGl_6rQ45bZquWN" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-08T02:15:27.016Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="IkNgzAwxfGwhZrrcRBCI" version="24.0.1" type="github">
   <diagram name="Page-1" id="aPnbpQnDHexMjiSY9RXR">
-    <mxGraphModel>
+    <mxGraphModel dx="918" dy="592" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="y7g6OVNDeZIhhrAD-rWV-2" value="S3 Bucket" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="307" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="y7g6OVNDeZIhhrAD-rWV-4" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.smartphone;" vertex="1" parent="1">
+          <mxGeometry x="120" y="170" width="40" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="y7g6OVNDeZIhhrAD-rWV-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=1.021;exitY=0.449;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="y7g6OVNDeZIhhrAD-rWV-4" target="y7g6OVNDeZIhhrAD-rWV-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="440" as="sourcePoint" />
+            <mxPoint x="460" y="390" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="458" y="201" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y7g6OVNDeZIhhrAD-rWV-6" value="Upload to S3 directly" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="y7g6OVNDeZIhhrAD-rWV-5">
+          <mxGeometry x="0.1146" y="2" relative="1" as="geometry">
+            <mxPoint x="-83" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y7g6OVNDeZIhhrAD-rWV-7" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.483;entryY=0.999;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="y7g6OVNDeZIhhrAD-rWV-2" target="y7g6OVNDeZIhhrAD-rWV-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="380" as="sourcePoint" />
+            <mxPoint x="460" y="330" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y7g6OVNDeZIhhrAD-rWV-8" value="Select some items and download&amp;nbsp;&lt;div&gt;directly&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="y7g6OVNDeZIhhrAD-rWV-7">
+          <mxGeometry x="-0.0035" y="-3" relative="1" as="geometry">
+            <mxPoint x="65" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
