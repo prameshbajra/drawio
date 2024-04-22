@@ -1,9 +1,78 @@
-<mxfile host="app.diagrams.net" modified="2024-04-22T10:05:46.072Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" version="24.2.2" etag="n3LaS2NYg0cXjZG6bbI_" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-22T10:17:55.406Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="UB0aeocf3qspnYI9OB87" version="24.2.2" type="github">
   <diagram name="Page-1" id="-awhda2baYOCYrHAV5k1">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-2" value="Rolling logs present as files&lt;div style=&quot;line-height: 120%;&quot;&gt;here.&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;align=center;strokeColor=#d79b00;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="160" y="320" width="170" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-5" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="220" y="500" width="50" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-6" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="230" y="510" width="50" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-7" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="520" width="50" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="0-1HYOlajFdI5XsVc4ci-12" target="0-1HYOlajFdI5XsVc4ci-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-14" value="Send Firebase message" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0-1HYOlajFdI5XsVc4ci-13">
+          <mxGeometry x="-0.1907" y="-2" relative="1" as="geometry">
+            <mxPoint x="54" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-12" value="Firebase Cloud&lt;div&gt;Function API&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="470" y="50" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.875;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="0-1HYOlajFdI5XsVc4ci-15" target="0-1HYOlajFdI5XsVc4ci-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="115" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-22" value="Calls API/Or runs scripts with token" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0-1HYOlajFdI5XsVc4ci-19">
+          <mxGeometry x="0.2329" y="-2" relative="1" as="geometry">
+            <mxPoint x="40" y="77" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-15" value="Developers/Support team" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="790" y="410" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="0-1HYOlajFdI5XsVc4ci-23" target="0-1HYOlajFdI5XsVc4ci-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-28" value="Manually download from Firebase storage" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0-1HYOlajFdI5XsVc4ci-27">
+          <mxGeometry x="0.2007" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-23" value="Firebase&amp;nbsp;&lt;div&gt;storage&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="680" width="110" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;sketch=1;curveFitting=1;jiggle=2;" edge="1" parent="1" source="0-1HYOlajFdI5XsVc4ci-2" target="0-1HYOlajFdI5XsVc4ci-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="245" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-25" value="Uploads logs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0-1HYOlajFdI5XsVc4ci-24">
+          <mxGeometry x="0.0222" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-26" value="Retention time: 1 day" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="502.5" y="830" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="0-1HYOlajFdI5XsVc4ci-29" value="Money SMS App" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;horizontal=1;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="192.5" y="340" width="105" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
