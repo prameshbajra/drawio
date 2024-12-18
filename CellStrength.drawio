@@ -279,7 +279,7 @@
           <mxGeometry x="2240" y="410" width="300" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-54" value="Note: We might need to change few things in Money SMS app. The above HLD assumes that Money SMS properly send the data to backend." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
-          <mxGeometry x="135.3" y="1400" width="560" height="60" as="geometry" />
+          <mxGeometry x="30.000000000000014" y="3010" width="560" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="FJ7R4VYDQQkWekEegoId-198" source="FJ7R4VYDQQkWekEegoId-72">
           <mxGeometry relative="1" as="geometry">
@@ -427,7 +427,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-132" value="For any of the API calls below, appscripts saves the data in the DB." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
-          <mxGeometry x="135.3" y="1470" width="560" height="60" as="geometry" />
+          <mxGeometry x="30.000000000000014" y="3080" width="560" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-133" target="FJ7R4VYDQQkWekEegoId-139">
           <mxGeometry relative="1" as="geometry">
