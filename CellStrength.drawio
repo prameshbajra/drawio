@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Page-1" id="AvjChgLorRrByspm1l1_">
-    <mxGraphModel dx="2255" dy="2504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4097" dy="2289" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -52,12 +52,6 @@
         </mxCell>
         <mxCell id="H9SD5z-_cukzh-uj4NfE-3" value="Appscripts gateway" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="1" vertex="1">
           <mxGeometry x="600" y="400" width="42.599999999999994" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="nSinrPZJ9kr5eliyA3m0-1" value="&lt;div&gt;1. Sim state: Triggers when SIM is inserted, removed and also when SIM becomes available.&lt;/div&gt;&lt;div&gt;2. Service state: Gives these data about the SIM&amp;nbsp;IN_SERVICE, OUT_OF_SERVICE, EMERGENCY_ONLY, POWER_OFF. Roaming data is also held by service state. It triggers when SIM is in and out of roaming.&lt;/div&gt;&lt;div&gt;3. Cell signal strength: To simplify this has two things in it. NetworkType and NetworkStrength. Network type refers to LTE etc and NetworkStrength refers to number from 0-100, where 100 is the best.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;glass=0;shadow=0;" parent="1" vertex="1">
-          <mxGeometry x="90" y="-420" width="690" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="nSinrPZJ9kr5eliyA3m0-2" value="&lt;span style=&quot;&quot;&gt;Why can&#39;t we just rely on one?&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;- SimState and Service state might look dependent on each other but it does not co-relate.&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;- This also depends on the manufacturer of the device.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;SIM STATE&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- If SIM state is not READY, other states (service or signal strength) are irrelevant.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Handle cases like ABSENT, LOCKED, or other intermediate states explicitly.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;SERVICE STATE&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Service state depends on the SIM being READY.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Service state must be checked independently, as it can be OUT_OF_SERVICE or EMERGENCY_ONLY even with a valid SIM.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;SIGNAL STRENGTH&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Signal strength should only be considered meaningful if the service state is IN_SERVICE or EMERGENCY_ONLY.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- A valid SIM and service state are prerequisites for meaningful signal strength values.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="90" y="-280" width="690" height="270" as="geometry" />
         </mxCell>
         <mxCell id="nSinrPZJ9kr5eliyA3m0-10" value="Redis Sorted Set" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" parent="1" vertex="1">
           <mxGeometry x="740" y="240" width="180" height="150" as="geometry" />
@@ -281,25 +275,25 @@
         <mxCell id="FJ7R4VYDQQkWekEegoId-54" value="Note: We might need to change few things in Money SMS app. The above HLD assumes that Money SMS properly send the data to backend." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
           <mxGeometry x="30.000000000000014" y="3010" width="560" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FJ7R4VYDQQkWekEegoId-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="FJ7R4VYDQQkWekEegoId-198" source="FJ7R4VYDQQkWekEegoId-72">
+        <mxCell id="FJ7R4VYDQQkWekEegoId-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="FJ7R4VYDQQkWekEegoId-198" source="FJ7R4VYDQQkWekEegoId-72">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="580.3" y="3330" as="targetPoint" />
-            <mxPoint x="580.3" y="3160" as="sourcePoint" />
+            <mxPoint x="780.3" y="3345" as="targetPoint" />
+            <mxPoint x="780.3" y="3175" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="830" y="3570" />
+              <mxPoint x="1030" y="3585" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-69" value="Appscripts&lt;div&gt;(Save to DB)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FJ7R4VYDQQkWekEegoId-68">
           <mxGeometry x="-0.193" y="-2" relative="1" as="geometry">
-            <mxPoint x="2" y="-188" as="offset" />
+            <mxPoint x="2" y="-239" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FJ7R4VYDQQkWekEegoId-71" value="Cell signal strength" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="750" y="3000" width="130" height="30" as="geometry" />
+        <mxCell id="FJ7R4VYDQQkWekEegoId-71" value="Cell signal strength" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="910" y="3010" width="210" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="FJ7R4VYDQQkWekEegoId-72" value="&lt;div&gt;Triggered when value changes by 20%&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST /cellstrengthchange&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;networkType: &amp;lt;string&amp;gt;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;strength: &amp;lt;double&amp;gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;simSlot: &amp;lt;number&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="740" y="3083" width="230" height="140" as="geometry" />
+        <mxCell id="FJ7R4VYDQQkWekEegoId-72" value="&lt;div&gt;Triggered when value changes by 20% or when&amp;nbsp;&lt;/div&gt;&lt;div&gt;signal drops or recovers from 10 percent.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;POST /cellstrengthchange&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;networkType: &amp;lt;string&amp;gt;,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;strength: &amp;lt;double&amp;gt;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space-collapse: collapse;&quot;&gt;&lt;span style=&quot;white-space-collapse: preserve;&quot;&gt;&#x9;&lt;/span&gt;simSlot: &amp;lt;number&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="940" y="3088" width="280" height="160" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-162" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="FJ7R4VYDQQkWekEegoId-161">
           <mxGeometry relative="1" as="geometry">
@@ -526,8 +520,8 @@
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-165" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="FJ7R4VYDQQkWekEegoId-173">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1290" y="3250" as="targetPoint" />
-            <mxPoint x="1289.7400000000002" y="3123" as="sourcePoint" />
+            <mxPoint x="1490" y="3265" as="targetPoint" />
+            <mxPoint x="1489.7400000000002" y="3138" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-166" value="Appscripts&lt;div&gt;(Save to DB)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FJ7R4VYDQQkWekEegoId-165">
@@ -535,17 +529,17 @@
             <mxPoint y="5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FJ7R4VYDQQkWekEegoId-167" value="Service State change" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="1220" y="3000" width="140" height="30" as="geometry" />
+        <mxCell id="FJ7R4VYDQQkWekEegoId-167" value="Service State change" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="1375" y="3010" width="230" height="40" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-168" value="1. roaming?&lt;div&gt;2. Service state for simSlot&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1205" y="3083" width="170" height="40" as="geometry" />
+          <mxGeometry x="1405" y="3098" width="170" height="40" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-171" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-173" target="FJ7R4VYDQQkWekEegoId-198">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1292.571428571429" y="3400.069264069264" as="targetPoint" />
+            <mxPoint x="1492.571428571429" y="3415.069264069264" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1290" y="3460" />
+              <mxPoint x="1490" y="3475" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -557,7 +551,7 @@
         <mxCell id="FJ7R4VYDQQkWekEegoId-209" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-173" target="FJ7R4VYDQQkWekEegoId-202">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1560" y="3300" />
+              <mxPoint x="1760" y="3315" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -567,15 +561,15 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-173" value="Is roaming?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1250" y="3260" width="80" height="80" as="geometry" />
+          <mxGeometry x="1450" y="3275" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="FJ7R4VYDQQkWekEegoId-186" value="SIM State change" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="1700" y="3000" width="120" height="30" as="geometry" />
+        <mxCell id="FJ7R4VYDQQkWekEegoId-186" value="SIM State change" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="1860" y="3010" width="200" height="40" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-187" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="FJ7R4VYDQQkWekEegoId-194">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1760" y="3040" as="sourcePoint" />
-            <mxPoint x="2094.25" y="3160" as="targetPoint" />
+            <mxPoint x="1960" y="3055" as="sourcePoint" />
+            <mxPoint x="2294.25" y="3175" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-188" value="Appscripts&lt;div&gt;(Save to DB)&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FJ7R4VYDQQkWekEegoId-187">
@@ -585,10 +579,10 @@
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-189" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-194" target="FJ7R4VYDQQkWekEegoId-198">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2494.2500000000005" y="3330" as="targetPoint" />
+            <mxPoint x="2694.2500000000005" y="3345" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1760" y="3222" />
-              <mxPoint x="1760" y="3570" />
+              <mxPoint x="1960" y="3237" />
+              <mxPoint x="1960" y="3585" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -599,10 +593,10 @@
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-192" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-194" target="FJ7R4VYDQQkWekEegoId-202">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2339.316666666667" y="3380" as="targetPoint" />
+            <mxPoint x="2539.316666666667" y="3395" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1950" y="3222" />
-              <mxPoint x="1950" y="4145" />
+              <mxPoint x="2150" y="3237" />
+              <mxPoint x="2150" y="4160" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -612,27 +606,27 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-194" value="Is state READY?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1700" y="3164" width="120" height="116" as="geometry" />
+          <mxGeometry x="1900" y="3179" width="120" height="116" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-195" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-198" target="FJ7R4VYDQQkWekEegoId-199">
           <mxGeometry x="-0.8476" relative="1" as="geometry">
-            <mxPoint x="1974.25" y="3680" as="targetPoint" />
+            <mxPoint x="2174.25" y="3695" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1225" y="3640" />
-              <mxPoint x="1110" y="3640" />
-              <mxPoint x="1110" y="3960" />
-              <mxPoint x="1291" y="3960" />
+              <mxPoint x="1425" y="3655" />
+              <mxPoint x="1310" y="3655" />
+              <mxPoint x="1310" y="3975" />
+              <mxPoint x="1491" y="3975" />
             </Array>
             <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-196" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-198" target="FJ7R4VYDQQkWekEegoId-199">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2234.2500000000005" y="3690" as="targetPoint" />
+            <mxPoint x="2434.2500000000005" y="3705" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1520" y="3638" />
-              <mxPoint x="1520" y="3960" />
-              <mxPoint x="1291" y="3960" />
+              <mxPoint x="1720" y="3653" />
+              <mxPoint x="1720" y="3975" />
+              <mxPoint x="1491" y="3975" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -642,15 +636,15 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-198" value="Is&amp;nbsp;&lt;div&gt;SERVICE_STATE == IN_SERVICE&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1225" y="3570" width="130" height="135" as="geometry" />
+          <mxGeometry x="1425" y="3585" width="130" height="135" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-199" value="CellStrength&lt;div&gt;&amp;gt;= 10&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1240" y="3960" width="100" height="100" as="geometry" />
+          <mxGeometry x="1440" y="3975" width="100" height="100" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-228" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-202" target="FJ7R4VYDQQkWekEegoId-216">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1520" y="4300" />
+              <mxPoint x="1720" y="4315" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -660,12 +654,12 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-202" value="&lt;font color=&quot;#ea6b66&quot;&gt;Remove number from coverage&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#b85450;fillColor=#f8cecc;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="1464.0000000000005" y="4130" width="190" height="30" as="geometry" />
+          <mxGeometry x="1664.0000000000005" y="4145" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-226" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-205" target="FJ7R4VYDQQkWekEegoId-216">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1111" y="4300" />
+              <mxPoint x="1311" y="4315" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -675,10 +669,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-205" value="Number can be in coverage" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=#82b366;fillColor=#d5e8d4;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="1026.3000000000002" y="4130" width="170" height="30" as="geometry" />
+          <mxGeometry x="1226.3000000000002" y="4145" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-216" value="Notify NRS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1290" y="4280" width="80" height="30" as="geometry" />
+          <mxGeometry x="1490" y="4295" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-223" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.497;entryY=0.144;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-199" target="FJ7R4VYDQQkWekEegoId-205">
           <mxGeometry relative="1" as="geometry" />
@@ -688,11 +682,12 @@
             <mxPoint x="29" y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FJ7R4VYDQQkWekEegoId-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.246;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-199" target="FJ7R4VYDQQkWekEegoId-202">
+        <mxCell id="FJ7R4VYDQQkWekEegoId-230" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#f8cecc;strokeColor=#b85450;entryX=0.296;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-199" target="FJ7R4VYDQQkWekEegoId-202">
           <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1550" y="4005" as="sourcePoint" />
+            <mxPoint x="1670" y="4125" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1520" y="4010" />
-              <mxPoint x="1520" y="4136" />
+              <mxPoint x="1720" y="4025" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -700,6 +695,12 @@
           <mxGeometry x="-0.7078" y="1" relative="1" as="geometry">
             <mxPoint x="30" y="1" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-234" value="&lt;div&gt;1. Sim state: Triggers when SIM is inserted, removed and also when SIM becomes available.&lt;/div&gt;&lt;div&gt;2. Service state: Gives these data about the SIM&amp;nbsp;IN_SERVICE, OUT_OF_SERVICE, EMERGENCY_ONLY, POWER_OFF. Roaming data is also held by service state. It triggers when SIM is in and out of roaming.&lt;/div&gt;&lt;div&gt;3. Cell signal strength: To simplify this has two things in it. NetworkType and NetworkStrength. Network type refers to LTE etc and NetworkStrength refers to number from 0-100, where 100 is the best.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;glass=0;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="3240" width="610" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-235" value="&lt;span style=&quot;&quot;&gt;Why can&#39;t we just rely on one?&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;- SimState and Service state might look dependent on each other but it does not co-relate.&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;- This also depends on the manufacturer of the device.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;SIM STATE&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- If SIM state is not READY, other states (service or signal strength) are irrelevant.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Handle cases like ABSENT, LOCKED, or other intermediate states explicitly.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;SERVICE STATE&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Service state depends on the SIM being READY.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Service state must be checked independently, as it can be OUT_OF_SERVICE or EMERGENCY_ONLY even with a valid SIM.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;SIGNAL STRENGTH&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Signal strength should only be considered meaningful if the service state is IN_SERVICE or EMERGENCY_ONLY.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- A valid SIM and service state are prerequisites for meaningful signal strength values.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="30" y="3400" width="610" height="350" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
