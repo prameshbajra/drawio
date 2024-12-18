@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
+  <diagram name="Page-1" id="AvjChgLorRrByspm1l1_">
+    <mxGraphModel dx="1434" dy="1970" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="H9SD5z-_cukzh-uj4NfE-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#994C00;strokeColor=#994C00;entryX=-0.023;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="H9SD5z-_cukzh-uj4NfE-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="427" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="427" />
+            </Array>
+            <mxPoint x="140" y="700" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H9SD5z-_cukzh-uj4NfE-7" value="Triggered when value changes by 20%&lt;br&gt;&lt;br&gt;POST /cellstrengthchange&lt;br&gt;{&lt;br&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;networkType: &amp;lt;string&amp;gt;,&lt;br&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;strength: &amp;lt;double&amp;gt;,&lt;br&gt;&#x9;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;simSlot: &amp;lt;number&amp;gt;&lt;br&gt;}&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontColor=#994C00;" parent="H9SD5z-_cukzh-uj4NfE-2" vertex="1" connectable="0">
+          <mxGeometry x="-0.5742" y="2" relative="1" as="geometry">
+            <mxPoint x="-78" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="799.5" as="sourcePoint" />
+            <mxPoint x="621.3" y="487.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-5" value="SimStateChange Event&lt;div&gt;/sim-state&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="nSinrPZJ9kr5eliyA3m0-4" vertex="1" connectable="0">
+          <mxGeometry x="-0.2196" y="1" relative="1" as="geometry">
+            <mxPoint x="-10" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H9SD5z-_cukzh-uj4NfE-1" target="H9SD5z-_cukzh-uj4NfE-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="621" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-8" value="ServiceStateChange Event&lt;div&gt;/service-state&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="nSinrPZJ9kr5eliyA3m0-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.5151" y="3" relative="1" as="geometry">
+            <mxPoint x="101" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H9SD5z-_cukzh-uj4NfE-1" value="Money SMS App" style="sketch=0;outlineConnect=0;gradientColor=none;strokeColor=#232F3E;fillColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.mobile_client;" parent="1" vertex="1">
+          <mxGeometry x="90" y="700" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H9SD5z-_cukzh-uj4NfE-3" target="nSinrPZJ9kr5eliyA3m0-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="621.3" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H9SD5z-_cukzh-uj4NfE-3" value="Appscripts gateway" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="1" vertex="1">
+          <mxGeometry x="600" y="400" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-1" value="&lt;div&gt;1. Sim state: Triggers when SIM is inserted, removed and also when SIM becomes available.&lt;/div&gt;&lt;div&gt;2. Service state: Gives these data about the SIM&amp;nbsp;IN_SERVICE, OUT_OF_SERVICE, EMERGENCY_ONLY, POWER_OFF. Roaming data is also held by service state. It triggers when SIM is in and out of roaming.&lt;/div&gt;&lt;div&gt;3. Cell signal strength: To simplify this has two things in it. NetworkType and NetworkStrength. Network type refers to LTE etc and NetworkStrength refers to number from 0-100, where 100 is the best.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="90" y="-420" width="690" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-2" value="&lt;span style=&quot;&quot;&gt;Why can&#39;t we just rely on one?&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;- SimState and Service state might look dependent on each other but it does not.&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;- This also depends on the manufacturer of the device.&amp;nbsp;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="90" y="-240" width="490" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-10" value="Cache" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;" parent="1" vertex="1">
+          <mxGeometry x="531.3" y="230" width="180" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-11" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=1;" parent="nSinrPZJ9kr5eliyA3m0-10" vertex="1">
+          <mxGeometry y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-12" value="phoneNumber" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;whiteSpace=wrap;html=1;" parent="nSinrPZJ9kr5eliyA3m0-11" vertex="1">
+          <mxGeometry width="98.70000000000005" height="30" as="geometry">
+            <mxRectangle width="98.70000000000005" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-13" value="weight" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;whiteSpace=wrap;html=1;" parent="nSinrPZJ9kr5eliyA3m0-11" vertex="1">
+          <mxGeometry x="98.70000000000005" width="81.29999999999995" height="30" as="geometry">
+            <mxRectangle width="81.29999999999995" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-14" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="nSinrPZJ9kr5eliyA3m0-10" vertex="1">
+          <mxGeometry y="60" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-15" value="919959204435" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" parent="nSinrPZJ9kr5eliyA3m0-14" vertex="1">
+          <mxGeometry width="98.70000000000005" height="30" as="geometry">
+            <mxRectangle width="98.70000000000005" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-16" value="7" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" parent="nSinrPZJ9kr5eliyA3m0-14" vertex="1">
+          <mxGeometry x="98.70000000000005" width="81.29999999999995" height="30" as="geometry">
+            <mxRectangle width="81.29999999999995" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-17" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="nSinrPZJ9kr5eliyA3m0-10" vertex="1">
+          <mxGeometry y="90" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-18" value="4916098497331" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" parent="nSinrPZJ9kr5eliyA3m0-17" vertex="1">
+          <mxGeometry width="98.70000000000005" height="30" as="geometry">
+            <mxRectangle width="98.70000000000005" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-19" value="9" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" parent="nSinrPZJ9kr5eliyA3m0-17" vertex="1">
+          <mxGeometry x="98.70000000000005" width="81.29999999999995" height="30" as="geometry">
+            <mxRectangle width="81.29999999999995" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-20" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;fillColor=none;collapsible=0;dropTarget=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;top=0;left=0;right=0;bottom=0;" parent="nSinrPZJ9kr5eliyA3m0-10" vertex="1">
+          <mxGeometry y="120" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-21" value="4916092482967" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;whiteSpace=wrap;html=1;" parent="nSinrPZJ9kr5eliyA3m0-20" vertex="1">
+          <mxGeometry width="98.70000000000005" height="30" as="geometry">
+            <mxRectangle width="98.70000000000005" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-22" value="9" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" parent="nSinrPZJ9kr5eliyA3m0-20" vertex="1">
+          <mxGeometry x="98.70000000000005" width="81.29999999999995" height="30" as="geometry">
+            <mxRectangle width="81.29999999999995" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-23" value="Some other service" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="300" width="42.599999999999994" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.009;entryY=0.537;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="nSinrPZJ9kr5eliyA3m0-23" target="H9SD5z-_cukzh-uj4NfE-3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1141" y="429" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-25" value="Rest call or a shared cache" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="nSinrPZJ9kr5eliyA3m0-24" vertex="1" connectable="0">
+          <mxGeometry x="0.1497" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nSinrPZJ9kr5eliyA3m0-26" value="CellStrength in pings might still be needed if we decide to cancel out pings from the appscripts itself." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="90" y="1020" width="560" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
