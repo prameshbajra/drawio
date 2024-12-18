@@ -130,7 +130,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nSinrPZJ9kr5eliyA3m0-26" value="CellStrength in pings might still be needed if we decide to cancel out pings from the appscripts itself." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
-          <mxGeometry x="90" y="1260" width="560" height="60" as="geometry" />
+          <mxGeometry x="90" y="1360" width="560" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#994C00;strokeColor=#994C00;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
