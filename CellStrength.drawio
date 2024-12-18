@@ -115,7 +115,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="nSinrPZJ9kr5eliyA3m0-23" value="Some other service" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="1" vertex="1">
-          <mxGeometry x="1120" y="300" width="42.599999999999994" height="54" as="geometry" />
+          <mxGeometry x="1110" y="280" width="42.599999999999994" height="54" as="geometry" />
         </mxCell>
         <mxCell id="nSinrPZJ9kr5eliyA3m0-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.009;entryY=0.537;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="nSinrPZJ9kr5eliyA3m0-23" target="H9SD5z-_cukzh-uj4NfE-3" edge="1">
           <mxGeometry relative="1" as="geometry">
