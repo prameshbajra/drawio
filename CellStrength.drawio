@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Page-1" id="AvjChgLorRrByspm1l1_">
-    <mxGraphModel dx="1509" dy="2012" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="973" dy="1814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -278,6 +278,45 @@
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-54" value="Note: We might need to change few things in Money SMS app. The above HLD assumes that Money SMS properly send the data to backend." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
           <mxGeometry x="90" y="1270" width="560" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-57" target="FJ7R4VYDQQkWekEegoId-67">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="1870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-61" value="To appscripts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FJ7R4VYDQQkWekEegoId-60">
+          <mxGeometry x="-0.193" y="-2" relative="1" as="geometry">
+            <mxPoint x="2" y="66" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-57" value="20% change&amp;nbsp;&lt;div&gt;/cellsignalchange&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="185" y="1670" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-62" value="Cell signal strength&lt;div&gt;(Case I)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="1605" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-67" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="205" y="1860" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="FJ7R4VYDQQkWekEegoId-70" source="FJ7R4VYDQQkWekEegoId-72">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="595" y="1850" as="targetPoint" />
+            <mxPoint x="595" y="1690" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-69" value="To appscripts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="FJ7R4VYDQQkWekEegoId-68">
+          <mxGeometry x="-0.193" y="-2" relative="1" as="geometry">
+            <mxPoint x="2" y="66" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-70" value="" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1860" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-71" value="Cell signal strength&lt;div&gt;(Case II)&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="530" y="1605" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-72" value="If signal drops below or above 20%&lt;br&gt;&lt;div&gt;/cellsignalchange&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1670" width="210" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
