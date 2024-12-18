@@ -26,7 +26,7 @@
         </mxCell>
         <mxCell id="nSinrPZJ9kr5eliyA3m0-5" value="SimStateChange Event&lt;div&gt;/sim-state&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="nSinrPZJ9kr5eliyA3m0-4" vertex="1" connectable="0">
           <mxGeometry x="-0.2196" y="1" relative="1" as="geometry">
-            <mxPoint x="-10" y="1" as="offset" />
+            <mxPoint x="-33" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nSinrPZJ9kr5eliyA3m0-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="H9SD5z-_cukzh-uj4NfE-1" target="H9SD5z-_cukzh-uj4NfE-3" edge="1">
