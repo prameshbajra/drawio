@@ -279,6 +279,9 @@
         <mxCell id="FJ7R4VYDQQkWekEegoId-49" value="1. If SIM_STATE or SERVICE_STATE is anything other than READY/IN_SERVICE&amp;nbsp;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.1 Remove the number from the list&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="2240" y="410" width="300" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-54" value="Note: We might need to change few things in Money SMS app. The above HLD assumes that Money SMS properly send the data to backend." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1290" width="560" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
