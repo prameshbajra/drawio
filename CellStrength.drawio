@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Page-1" id="AvjChgLorRrByspm1l1_">
-    <mxGraphModel dx="4097" dy="2289" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2390" dy="1335" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -272,7 +272,7 @@
         <mxCell id="FJ7R4VYDQQkWekEegoId-49" value="1. If SIM_STATE or SERVICE_STATE is anything other than READY/IN_SERVICE&amp;nbsp;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1.1 Remove the number from the list&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="2240" y="410" width="300" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FJ7R4VYDQQkWekEegoId-54" value="Note: We might need to change few things in Money SMS app. The above HLD assumes that Money SMS properly send the data to backend." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
+        <mxCell id="FJ7R4VYDQQkWekEegoId-54" value="Note: We might need to change few things in Money SMS app. The above HLD assumes that Money SMS properly send the data to backend." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
           <mxGeometry x="30.000000000000014" y="3010" width="560" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="FJ7R4VYDQQkWekEegoId-198" source="FJ7R4VYDQQkWekEegoId-72">
@@ -420,7 +420,7 @@
             <mxPoint x="1" y="18" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FJ7R4VYDQQkWekEegoId-132" value="For any of the API calls below, appscripts saves the data in the DB." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
+        <mxCell id="FJ7R4VYDQQkWekEegoId-132" value="For any of the API calls below, appscripts saves the data in the DB." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;align=left;" vertex="1" parent="1">
           <mxGeometry x="30.000000000000014" y="3080" width="560" height="60" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-135" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FJ7R4VYDQQkWekEegoId-133" target="FJ7R4VYDQQkWekEegoId-139">
@@ -701,6 +701,9 @@
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-235" value="&lt;span style=&quot;&quot;&gt;Why can&#39;t we just rely on one?&lt;/span&gt;&lt;br style=&quot;&quot;&gt;&lt;br style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;- SimState and Service state might look dependent on each other but it does not co-relate.&amp;nbsp;&lt;/span&gt;&lt;div style=&quot;&quot;&gt;- This also depends on the manufacturer of the device.&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;SIM STATE&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- If SIM state is not READY, other states (service or signal strength) are irrelevant.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Handle cases like ABSENT, LOCKED, or other intermediate states explicitly.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;SERVICE STATE&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Service state depends on the SIM being READY.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Service state must be checked independently, as it can be OUT_OF_SERVICE or EMERGENCY_ONLY even with a valid SIM.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;SIGNAL STRENGTH&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- Signal strength should only be considered meaningful if the service state is IN_SERVICE or EMERGENCY_ONLY.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;- A valid SIM and service state are prerequisites for meaningful signal strength values.&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="30" y="3400" width="610" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="FJ7R4VYDQQkWekEegoId-236" value="Some metrics that we need&lt;br&gt;&lt;br&gt;1. Can there be cell signal strength when SERVICE_STATE is not IN_SERVICE?" style="whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="30" y="3790" width="610" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
