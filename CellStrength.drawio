@@ -601,14 +601,14 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="2339.316666666667" y="3380" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="2190" y="3222" />
-              <mxPoint x="2190" y="4145" />
+              <mxPoint x="1950" y="3222" />
+              <mxPoint x="1950" y="4145" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-193" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#EA6B66;" vertex="1" connectable="0" parent="FJ7R4VYDQQkWekEegoId-192">
           <mxGeometry x="-0.4445" y="-4" relative="1" as="geometry">
-            <mxPoint x="-326" y="-138" as="offset" />
+            <mxPoint x="-66" y="-244" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-194" value="Is state READY?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
