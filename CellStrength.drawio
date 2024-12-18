@@ -703,7 +703,7 @@
           <mxGeometry x="30" y="3400" width="610" height="350" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-236" value="Some metrics that we need&lt;br&gt;&lt;br&gt;1. Can there be cell signal strength when SERVICE_STATE is not IN_SERVICE?" style="whiteSpace=wrap;html=1;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="30" y="3790" width="610" height="60" as="geometry" />
+          <mxGeometry x="30" y="3820" width="610" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
