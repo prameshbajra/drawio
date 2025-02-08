@@ -672,7 +672,7 @@
           <mxGeometry x="1226.3000000000002" y="4145" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-216" value="Notify NRS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1450" y="4290" width="80" height="30" as="geometry" />
+          <mxGeometry x="1450" y="4300" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="FJ7R4VYDQQkWekEegoId-223" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="FJ7R4VYDQQkWekEegoId-199" target="FJ7R4VYDQQkWekEegoId-205" edge="1">
           <mxGeometry relative="1" as="geometry" />
